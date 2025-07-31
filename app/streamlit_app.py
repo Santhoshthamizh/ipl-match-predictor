@@ -5,9 +5,9 @@ import pandas as pd
 import plotly.express as px
 
 # Load model and encoders
-model = joblib.load("../model/xgb_model.pkl")
-encoders = joblib.load("../model/feature_encoders.pkl")
-winner_encoder = joblib.load("../model/winner_encoder.pkl")
+model = joblib.load("model/xgb_model.pkl")
+encoders = joblib.load("model/feature_encoders.pkl")
+winner_encoder = joblib.load("model/winner_encoder.pkl")
 
 # Load dataset for charts
 df_chart = pd.read_excel("data/ipl_data.xlsx")
